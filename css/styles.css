@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,14..32,100..1000;1,14..32,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);
+
 /* reset web basics */
 * {
     margin: 0;
@@ -11,6 +15,7 @@ body {
     color: #a2c9ef;
     font-family: 'Raleway', 'DM Sans', monospace;
     min-height: 100vh;
+    transition: background-color 0.5s ease;
 }
 
 .navbar {
@@ -23,4 +28,42 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
+}
+
+.nav-button {
+    background-color: #d2dbeb;
+    width: 10%;
+    height: 20px;
+    color: #01162B;
+    border: 1px double #bdc3cd;
+    padding: 0.1rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Abel", sans-serif, monospace;
+    min-height: 20px;
+    font-size: 100%;
+    position: relative;
+}
+
+.nav-button:hover {
+    border: 5px solid rgb(199, 177, 177);
+}
+
+.button::before {}
+
+.button::after {
+    content: '';
+    position: absolute;
+
+
+}
+
+.landing-links {
+    display: flex;
+    position: relative;
+    top: -125px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
