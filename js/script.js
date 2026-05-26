@@ -1,3 +1,9 @@
+
+window.onload = () => {
+    document.getElementById("popup").classList.add("active");
+    document.getElementById("overlay").classList.add("active");
+}
+
 function closePopup() {
-    document.getElementById("popup").style.display = "none";
+    console.log("popup closed");
 }
